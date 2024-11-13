@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+
+    
+    &.center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    &.end {
+        justify-content: end;
+    }
+    &.col {
+        flex-direction: column;
+    }
+
+    &.beetwen {
+        justify-content: space-between;
+    }
+}
